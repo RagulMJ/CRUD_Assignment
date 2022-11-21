@@ -13,8 +13,7 @@ function onFormSubmit() {
 
 function readFormData() {
   var formData = {};
-  const ID = uid();
-  // formData['id'] = document.getElementById('id').value;
+  formData['id'] = document.getElementById('id').value;
   formData['firstName'] = document.getElementById('firstName').value;
   formData['lastName'] = document.getElementById('lastName').value;
   formData['mobileNumber'] = document.getElementById('mobileNumber').value;
@@ -55,7 +54,7 @@ function insertNewRecord(data) {
 }
 
 function resetForm() {
-  // document.getElementById('id').value;
+  document.getElementById('id').value;
   document.getElementById('firstName').value = '';
   document.getElementById('lastName').value = '';
   document.getElementById('mobileNumber').value = '';
